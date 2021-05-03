@@ -1,0 +1,19 @@
+---
+- name: Update Homebrew
+  community.general.homebrew:
+    update_homebrew: yes
+- name: Tap homebrew repos
+  community.general.homebrew_tap:
+    name: "{{ item }}"
+    state: present
+  loop: "{{ tap_repos }}"
+- name: Install homebrew packages
+  community.general.homebrew:
+    name: "{{ item }}"
+    state: latest
+  loop: "{{ homebrew_packages }}"
+- name: Install homebrew cask packages
+  community.general.homebrew_cask:
+    name: "{{ item }}"
+    state: latest
+  loop: "{{ cask_packages }}"

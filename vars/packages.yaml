@@ -1,0 +1,36 @@
+tap_repos:
+  - clementtsang/bottom
+
+homebrew_packages:
+  - tmux
+  - fish
+  - less
+  - exa
+  - ripgrep
+  - fd
+  - bat
+  - hyperfine
+  - broot
+  - bottom
+  - vim
+  - curl
+  - make
+  - git
+  - git-delta
+  - ansible
+  - bitwarden-cli
+  - node
+  - rustup
+  - nmap
+
+cask_packages:
+  - firefox
+  - spotify
+  - rectangle
+  - zoom
+  - signal
+  - tunnelblick
+  - visual-studio-code
+  - wireshark
+  - docker
+  - mactex-no-gui

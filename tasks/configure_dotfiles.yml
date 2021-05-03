@@ -1,0 +1,12 @@
+---
+- name: Create projects directory
+  ansible.builtin.file:
+    path: "{{ ansible_env.HOME }}/{{ projects_directory }}"
+    state: directory
+- name: Clone dotfiles
+  ansible.builtin.git:
+    repo: "{{ dotfiles_repo }}"
+    dest: "{{ ansible_env.HOME }}/{{ projects_directory }}/dotfiles"
+    accept_hostkey: yes
+- name: Execute dotfiles playbook
+  ansible.builtin.command: ansible-playbook "{{ ansible_env.HOME }}/{{ projects_directory }}/dotfiles/link.yml"
