@@ -10,10 +10,10 @@
 - name: Install homebrew packages
   community.general.homebrew:
     name: "{{ item }}"
-    state: latest
+    state: present
   loop: "{{ homebrew_packages }}"
 - name: Install homebrew cask packages
   community.general.homebrew_cask:
     name: "{{ item }}"
-    state: latest
+    state: present
   loop: "{{ cask_packages }}"
