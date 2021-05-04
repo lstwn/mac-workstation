@@ -16,3 +16,4 @@
     - import_tasks: ./tasks/install_homebrew.yml
     - import_tasks: ./tasks/configure_dotfiles.yml
     - import_tasks: ./tasks/generate_ssh_keypair_and_publish.yml
+    - import_tasks: ./tasks/install_npm_packages.yml

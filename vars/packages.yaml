@@ -34,3 +34,7 @@ cask_packages:
   - wireshark
   - docker
   - mactex-no-gui
+
+npm_packages:
+  - yarn
+  - vue-cli
