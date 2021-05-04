@@ -26,7 +26,6 @@ homebrew_packages:
 cask_packages:
   - firefox
   - spotify
-  - rectangle
   - zoom
   - signal
   - tunnelblick
