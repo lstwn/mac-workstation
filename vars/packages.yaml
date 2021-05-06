@@ -33,6 +33,7 @@ cask_packages:
   - wireshark
   - docker
   - mactex-no-gui
+  - rocket-chat
 
 npm_packages:
   - yarn
