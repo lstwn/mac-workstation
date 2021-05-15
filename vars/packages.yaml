@@ -37,4 +37,4 @@ cask_packages:
 
 npm_packages:
   - yarn
-  - vue-cli
+  - "@vue/cli"
