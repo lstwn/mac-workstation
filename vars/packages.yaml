@@ -22,6 +22,7 @@ homebrew_packages:
   - node
   - rustup
   - nmap
+  - mosh
 
 cask_packages:
   - firefox
@@ -33,7 +34,6 @@ cask_packages:
   - wireshark
   - docker
   - mactex-no-gui
-  - rocket-chat
 
 npm_packages:
   - yarn
