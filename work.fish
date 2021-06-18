@@ -13,3 +13,5 @@ tmux new-window -d -n "lusi dev"   "cd ~/Projects/lusi/ && vim; fish"
 tmux new-window -d -n "lusi run"   "cd ~/Projects/lusi/ && docker compose up; fish"
 tmux split-window -v -t "lusi run" "cd ~/Projects/lusi/ && fish"
 tmux split-window -h -t "lusi run" "cd ~/Projects/lusi/ && fish"
+
+bw copy passwordtotp "Lavego Login"
