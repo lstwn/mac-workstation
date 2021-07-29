@@ -1,5 +1,6 @@
 tap_repos:
   - clementtsang/bottom
+  - homebrew/cask-fonts
 
 homebrew_packages:
   - tmux
@@ -12,7 +13,8 @@ homebrew_packages:
   - hyperfine
   - broot
   - bottom
-  - vim
+  - neovim
+  - cmake
   - curl
   - make
   - git
@@ -23,6 +25,9 @@ homebrew_packages:
   - rustup
   - nmap
   - mosh
+  - texlab # latex langauge server
+  - efm-langserver # general purpose language server for linters
+  - luarocks
 
 cask_packages:
   - firefox
@@ -34,7 +39,19 @@ cask_packages:
   - wireshark
   - docker
   - mactex-no-gui
+  - font-hack-nerd-font
 
 npm_packages:
   - yarn
+  - eslint_d
+  - neovim
   - "@vue/cli"
+  - typescript-language-server
+  - vscode-langservers-extracted # html, css, json
+  - "@prisma/language-server"
+  - graphql-language-service-cli
+  - vls # vue language server
+  - pyright
+  - vim-language-server
+  - bash-language-server
+  - yaml-language-server
