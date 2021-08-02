@@ -15,6 +15,7 @@ homebrew_packages:
   - bottom
   - neovim
   - cmake
+  - ninja
   - curl
   - make
   - git
