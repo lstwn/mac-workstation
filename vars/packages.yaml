@@ -29,6 +29,7 @@ homebrew_packages:
   - texlab # latex langauge server
   - efm-langserver # general purpose language server for linters
   - luarocks
+  - syncthing
 
 cask_packages:
   - firefox
@@ -41,6 +42,8 @@ cask_packages:
   - docker
   - mactex-no-gui
   - font-hack-nerd-font
+  - obsidian
+  - sonic-pi
 
 npm_packages:
   - yarn
