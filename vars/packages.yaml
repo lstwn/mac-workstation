@@ -48,6 +48,7 @@ cask_packages:
 npm_packages:
   - yarn
   - eslint_d
+  - "@fsouza/prettierd"
   - neovim
   - "@vue/cli"
   - typescript-language-server
