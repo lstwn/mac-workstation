@@ -3,10 +3,6 @@
 tmux rename-session "work"
 tmux rename-window "main"
 
-tmux new-window -d -n "spotify"    "ncspot; fish"
-
-tmux new-window -d -n "notes"      "cd ~/Documents/Private/01\\ Notes/lstwn && $EDITOR; fish"
-
 tmux new-window -d -n "levi dev"   "cd ~/Projects/levi/ && $EDITOR; fish"
 
 tmux new-window -d -n "lusi dev"   "cd ~/Projects/lusi/ && $EDITOR; fish"
