@@ -30,6 +30,7 @@ homebrew_packages:
   - efm-langserver # general purpose language server for linters
   - luarocks
   - syncthing
+  - mas
 
 cask_packages:
   - firefox
