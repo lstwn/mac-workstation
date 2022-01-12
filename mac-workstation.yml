@@ -11,10 +11,12 @@
     - name: ssh_key_passphrase
       prompt: ssh key passphrase
     - name: github_access_token
-      prompt: GitHub access token
+      prompt: github access token
   tasks:
-    - import_tasks: ./tasks/install_homebrew.yml
-    - import_tasks: ./tasks/configure_dotfiles.yml
-    - import_tasks: ./tasks/generate_ssh_keypair_and_publish.yml
-    - import_tasks: ./tasks/install_npm_packages.yml
-    - import_tasks: ./tasks/configure_bluetooth_fix.yml
+    - import_tasks: ./tasks/hostname_user.yml
+    - import_tasks: ./tasks/homebrew.yml
+    - import_tasks: ./tasks/app_store.yml
+    - import_tasks: ./tasks/dotfiles.yml
+    # - import_tasks: ./tasks/ssh.yml
+    - import_tasks: ./tasks/npm.yml
+    - import_tasks: ./tasks/bluetooth_fix.yml

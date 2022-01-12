@@ -1,19 +1,22 @@
 ---
-- name: Update Homebrew
+- name: update homebrew
   community.general.homebrew:
     update_homebrew: yes
-- name: Tap homebrew repos
+- name: tap homebrew repos
   community.general.homebrew_tap:
     name: "{{ item }}"
     state: present
   loop: "{{ tap_repos }}"
-- name: Install homebrew packages
+- name: install homebrew packages
   community.general.homebrew:
     name: "{{ item }}"
     state: present
   loop: "{{ homebrew_packages }}"
-- name: Install homebrew cask packages
+- name: install homebrew cask packages
   community.general.homebrew_cask:
     name: "{{ item }}"
     state: present
   loop: "{{ cask_packages }}"
+- name: upgrade all installed homebrew packages
+  community.general.homebrew:
+    upgrade_all: yes

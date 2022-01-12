@@ -1,0 +1,18 @@
+---
+- name: set hostname
+  become: true
+  ansible.builtin.hostname:
+    name: "{{ hostname }}"
+- name: allow fish shell in /etc/shells
+  become: true
+  ansible.builtin.lineinfile:
+    path: /etc/shells
+    search_string: /usr/local/bin/fish
+    line: /usr/local/bin/fish
+- name: set shell to fish
+  become: true
+  ansible.builtin.user:
+    name: "{{ ansible_env.USER }}"
+    state: present
+    shell: /usr/local/bin/fish
+    force: no

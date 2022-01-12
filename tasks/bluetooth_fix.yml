@@ -1,4 +1,4 @@
 ---
-- name: Execute bluetooth fix
+- name: execute bluetooth fix
   become: true
   ansible.builtin.command: sudo defaults write /Library/Preferences/com.apple.airport.bt.plist bluetoothCoexMgmt Hybrid

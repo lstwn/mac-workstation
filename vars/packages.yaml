@@ -23,7 +23,7 @@ homebrew_packages:
   - git-delta
   - ansible
   - bitwarden-cli
-  - node
+  - node@16
   - rustup
   - nmap
   - mosh
@@ -62,3 +62,18 @@ npm_packages:
   - vim-language-server
   - bash-language-server
   - yaml-language-server
+
+app_store_packages:
+  - 1444383602 # GoodNotes
+  - 1352778147 # Bitwarden
+  - 1475387142 # Tailscale
+  - 1526042938 # Tomito
+  - 1474276998 # HP Smart
+  - 1480933944 # Vimari
+  - 1438243180 # Dark Reader for Safari
+  - 1451544217 # Adobe Lightroom
+  - 409203825  # Numbers
+  - 409201541  # Pages
+  - 409183694  # Keynote
+  - 408981434  # iMovie
+  - 682658836  # GarageBand

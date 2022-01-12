@@ -1,12 +1,12 @@
 ---
-- name: Create npm global path
+- name: create npm global path
   ansible.builtin.file:
     path: ~/.npm/global
     state: directory
     # mode: '0755'
 - name: Set npm global path
   ansible.builtin.command: npm config set prefix '~/.npm/global'
-- name: Install npm packages
+- name: install npm packages
   community.general.npm:
     name: "{{ item }}"
     state: present

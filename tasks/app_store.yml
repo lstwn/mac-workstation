@@ -1,0 +1,8 @@
+---
+- name: install mac app store packages
+  community.general.mas:
+    id: "{{ app_store_packages | default([]) }}"
+    state: present
+- name: upgrade all installed mac app store apps
+  community.general.mas:
+    upgrade_all: yes
