@@ -43,7 +43,7 @@ cask_packages:
   - wireshark
   - docker
   - mactex-no-gui
-  - font-hack-nerd-font
+  - font-fira-code-nerd-font
   - obsidian
   - sonic-pi
 
@@ -62,6 +62,7 @@ npm_packages:
   - vim-language-server
   - bash-language-server
   - yaml-language-server
+  - "@tailwindcss/language-server"
 
 app_store_packages:
   - 1444383602 # GoodNotes
