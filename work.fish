@@ -18,9 +18,11 @@ tmux new-window -d -n "lusi dev"   "cd ~/Projects/lusi/ && fish"
 # launch docker in the background
 open -g -j -a Docker
 
-tmux new-window   -d -n "services" "cd ~/Projects/lusi/services/cassandra && sleep 30 && docker compose up; fish"
-tmux split-window -h -t "services" "cd ~/Projects/lusi/services/rabbitMQ  && sleep 30 && docker compose up; fish"
-tmux split-window -h -t "services" "cd ~/Projects/lusi/services/minio     && sleep 30 && docker compose up; fish"
+set SLEEP_COMMAND "sleep 50"
+
+tmux new-window   -d -n "services" "cd ~/Projects/lusi/services/cassandra && $SLEEP_COMMAND && docker compose up; fish"
+tmux split-window -h -t "services" "cd ~/Projects/lusi/services/rabbitMQ  && $SLEEP_COMMAND && docker compose up; fish"
+tmux split-window -h -t "services" "cd ~/Projects/lusi/services/minio     && $SLEEP_COMMAND && docker compose up; fish"
 tmux split-window -v -t "services" "cd ~/Projects/lasi/                   && fish"
 tmux split-window -h -t "services" "cd ~/Projects/lusi/                   && fish"
 tmux split-window -h -t "services" "cd ~/Projects/levi/                   && fish"
