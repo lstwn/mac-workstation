@@ -52,12 +52,12 @@ npm_packages:
   - eslint_d
   - "@fsouza/prettierd"
   - neovim
-  - "@vue/cli"
   - typescript-language-server
   - vscode-langservers-extracted # html, css, json
   - "@prisma/language-server"
   - graphql-language-service-cli
   - vls # vue language server
+  - "@volar/vue-language-server" # newer vue 3 language server
   - pyright
   - vim-language-server
   - bash-language-server
