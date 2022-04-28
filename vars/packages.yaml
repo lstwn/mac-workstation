@@ -25,6 +25,7 @@ homebrew_packages:
   - bitwarden-cli
   - node@16
   - rustup
+  - java
   - nmap
   - mosh
   - texlab # latex langauge server
