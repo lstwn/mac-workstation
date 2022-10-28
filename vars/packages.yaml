@@ -36,18 +36,20 @@ homebrew_packages:
   - mas
 
 cask_packages:
-  - firefox
+  - lunar
+  - swish
+  - mouse-fix
   - spotify
   - zoom
   - signal
   - tunnelblick
   - visual-studio-code
-  - wireshark
   - docker
   - mactex-no-gui
   - font-fira-code-nerd-font
-  - obsidian
+  - wireshark
   - sonic-pi
+  - firefox
 
 npm_packages:
   - yarn
