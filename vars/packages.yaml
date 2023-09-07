@@ -6,7 +6,7 @@ homebrew_packages:
   - tmux
   - fish
   - less
-  - exa
+  - eza
   - ripgrep
   - fd
   - bat
@@ -32,11 +32,9 @@ homebrew_packages:
   - texlab # latex langauge server
   - efm-langserver # general purpose language server for linters
   - luarocks
-  - syncthing
   - mas
 
 cask_packages:
-  - lunar
   - swish
   - mouse-fix
   - spotify
@@ -48,7 +46,6 @@ cask_packages:
   - mactex-no-gui
   - font-fira-code-nerd-font
   - wireshark
-  - sonic-pi
   - firefox
 
 npm_packages:
@@ -69,16 +66,13 @@ npm_packages:
   - "@tailwindcss/language-server"
 
 app_store_packages:
-  - 1444383602 # GoodNotes
+  - 1501563902 # Muse
   - 1352778147 # Bitwarden
-  - 1475387142 # Tailscale
-  - 1526042938 # Tomito
   - 1474276998 # HP Smart
-  - 1480933944 # Vimari
-  - 1438243180 # Dark Reader for Safari
-  - 1451544217 # Adobe Lightroom
   - 409203825  # Numbers
   - 409201541  # Pages
   - 409183694  # Keynote
   - 408981434  # iMovie
   - 682658836  # GarageBand
+  - 1438243180 # Dark Reader for Safari
+  - 1480933944 # Vimari
