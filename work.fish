@@ -15,14 +15,14 @@ tmux rename-window "main"
 # launch docker in the background
 open -g -j -a Docker
 
-tmux new-window   -d -n "services" "cd ~/Projects/lusi/services/cassandra && $SLEEP_COMMAND && docker compose up; fish"
-tmux split-window -h -t "services" "cd ~/Projects/lusi/services/rabbitMQ  && $SLEEP_COMMAND && docker compose up; fish"
-tmux split-window -h -t "services" "cd ~/Projects/lusi/services/minio     && $SLEEP_COMMAND && docker compose up; fish"
-tmux split-window -v -t "services" "cd ~/Projects/lasi/                   && fish"
+tmux new-window   -d -n "services" "cd ~/Projects/lusi/services/rabbitMQ  && $SLEEP_COMMAND && docker compose up; fish"
+tmux split-window -h -t "services" "cd ~/Projects/lusi/services/cassandra && $SLEEP_COMMAND && docker compose up; fish"
+tmux split-window -h -t "services" "cd ~/Projects/lusi/services/postgres  && $SLEEP_COMMAND && docker compose up; fish"
+tmux split-window -v -t "services" "cd ~/Projects/lusi/services/minio     && $SLEEP_COMMAND && docker compose up; fish"
+tmux split-window -h -t "services" "cd ~/Projects/lasi/                   && fish"
 tmux split-window -h -t "services" "cd ~/Projects/lusi/                   && fish"
-tmux split-window -h -t "services" "cd ~/Projects/levi/                   && fish"
-tmux split-window -v -t "services" "cd ~/Projects/luigui/                 && fish"
-tmux split-window -h -t "services" "cd ~/Projects/                        && fish"
+tmux split-window -v -t "services" "cd ~/Projects/levi/                   && fish"
+tmux split-window -h -t "services" "cd ~/Projects/luigui/                 && fish"
 tmux split-window -h -t "services" "cd ~/Projects/                        && fish"
 tmux select-layout   -t "services" tiled
 
@@ -33,5 +33,7 @@ tmux new-window -d -n "lusi"      "cd ~/Projects/lusi/ && fish"
 tmux new-window -d -n "luilibs"   "cd ~/Projects/luilibs/ && fish"
 
 tmux new-window -d -n "luigui"    "cd ~/Projects/luigui/ && fish"
+
+tmux new-window -d -n "dotfiles"  "cd ~/Projects/dotfiles/ && fish"
 
 bw copy passwordtotp "Lavego Login"
