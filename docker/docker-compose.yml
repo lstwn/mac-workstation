@@ -1,0 +1,28 @@
+version: "3"
+services:
+  spark:
+    build:
+      context: .
+      dockerfile: spark.dockerfile
+    ports:
+      - 4040:4040
+    volumes:
+      - ../fde23-bonusproject-2:/code
+    stdin_open: true
+    tty: true
+    command: /opt/spark/bin/spark-shell
+  ubuntu:
+    build:
+      context: .
+      dockerfile: ubuntu.dockerfile
+    stdin_open: true
+    tty: true
+    command: /bin/bash
+  postgres:
+    build:
+      context: .
+      dockerfile: postgres.dockerfile
+    stdin_open: true
+    tty: true
+    ports:
+      - 5432:5432
