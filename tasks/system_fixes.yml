@@ -1,4 +1,7 @@
 ---
+- name: execute key repeat fix
+  become: false
+  ansible.builtin.command: defaults write -app Terminal ApplePressAndHoldEnabled -bool false
 - name: execute bluetooth fix
   become: true
   ansible.builtin.command: sudo defaults write /Library/Preferences/com.apple.airport.bt.plist bluetoothCoexMgmt Hybrid

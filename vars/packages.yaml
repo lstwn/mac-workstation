@@ -1,6 +1,4 @@
 tap_repos:
-  - clementtsang/bottom
-  - homebrew/cask-fonts
 
 homebrew_packages:
   - tmux
@@ -11,68 +9,82 @@ homebrew_packages:
   - fd
   - bat
   - hyperfine
-  - broot
+  - tokei
   - bottom
-  - neovim
+  - dust
   - jq
-  - cmake
-  - ninja
   - curl
+  - nmap
   - make
   - git
   - git-delta
+  - gitui
+  - sops
+  - starship
   - ansible
-  - bitwarden-cli
-  - node@16
-  - rustup
-  - java
-  - jdtls
-  - nmap
-  - mosh
-  - texlab # latex langauge server
-  - efm-langserver # general purpose language server for linters
-  - luarocks
   - mas
+  - bitwarden-cli
+  - lazydocker
+  - node
+  - deno
+  - rustup # also installs rust-analyzer
+  - java
+  - jdtls # java language server
+  - texlab # latex langauge server
+  - efm-langserver # general purpose language server
+  - marksman # markdown language server
+  - tectonic # latex compiler
+  - latexindent # latex formatter
 
 cask_packages:
   - swish
-  - mouse-fix
-  - spotify
-  - zoom
+  - stats
   - signal
-  - tunnelblick
-  - visual-studio-code
-  - docker
-  - mactex-no-gui
-  - font-fira-code-nerd-font
-  - wireshark
   - firefox
+  - skim
+  - netnewswire
+  - docker
+  - visual-studio-code
+  - zed
+  - font-iosevka
+  - font-iosevka-aile
+  - font-iosevka-etoile
 
 npm_packages:
   - yarn
+  - pnpm
   - eslint_d
   - "@fsouza/prettierd"
-  - neovim
   - typescript-language-server
   - vscode-langservers-extracted # html, css, json
   - "@prisma/language-server"
   - graphql-language-service-cli
   - vls # vue language server
-  - "@volar/vue-language-server" # newer vue 3 language server
-  - pyright
-  - vim-language-server
+  - fish-lsp # fish language server
   - bash-language-server
   - yaml-language-server
   - "@tailwindcss/language-server"
 
 app_store_packages:
-  - 1501563902 # Muse
   - 1352778147 # Bitwarden
-  - 1474276998 # HP Smart
-  - 409203825  # Numbers
-  - 409201541  # Pages
-  - 409183694  # Keynote
-  - 408981434  # iMovie
-  - 682658836  # GarageBand
+  - 1099568401 # Home Assistant
+  - 1469995354 # Broadcasts
+  - 899247664 # TestFlight
+  - 948660805 # AusweisApp
+  - 310633997 # WhatsApp
+  - 409203825 # Numbers
+  - 409201541 # Pages
+  - 409183694 # Keynote
+  - 408981434 # iMovie
   - 1438243180 # Dark Reader for Safari
   - 1480933944 # Vimari
+  - 1579902068 # xSearch
+  - 1365531024 # 1Blocker
+  - 1451685025 # WireGuard
+
+# Safari Web Apps (manual)
+# - https://www.excalidraw.com
+# - https://discord.com/app/
+# - https://teams.microsoft.com/v2/?clientType=pwa
+# - https://chat.lavego.de/home?homescreen
+# - https://devdocs.io/

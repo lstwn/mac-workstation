@@ -15,27 +15,29 @@ tmux rename-window main
 # launch docker in the background
 open -g -j -a Docker
 
-tmux new-window -d -n services   "cd ~/Projects/lusi/    && $SLEEP_COMMAND && yarn docker:rabbitmq:up; fish"
-tmux split-window -h -t services "cd ~/Projects/lusi/    && $SLEEP_COMMAND && yarn docker:cassandra:up; fish"
+tmux new-window   -d -n services "cd ~/Projects/lusi/    && $SLEEP_COMMAND && yarn docker:rabbitmq:up; fish"
 tmux split-window -h -t services "cd ~/Projects/lusi/    && $SLEEP_COMMAND && yarn docker:postgres:up; fish"
+tmux split-window -h -t services "cd ~/Projects/lusi/    && $SLEEP_COMMAND && yarn docker:cassandra:up; fish"
 tmux split-window -v -t services "cd ~/Projects/lusi/    && $SLEEP_COMMAND && yarn docker:minio:up; fish"
-tmux split-window -h -t services "cd ~/Projects/lasi/    && fish"
+tmux split-window -h -t services "cd ~/Projects/loak/    && $SLEEP_COMMAND && ./run.sh; fish"
 tmux split-window -h -t services "cd ~/Projects/lusi/    && fish"
 tmux split-window -v -t services "cd ~/Projects/levi/    && fish"
-tmux split-window -h -t services "cd ~/Projects/luigui/  && fish"
-tmux split-window -h -t services "cd ~/Projects/         && fish"
+tmux split-window -h -t services "cd ~/Projects/lui/     && fish"
+tmux split-window -h -t services "cd ~/Projects/lapi/    && fish"
 tmux select-layout -t services tiled
 
-tmux new-window -d -n levi "cd ~/Projects/levi/ && fish"
+# tmux new-window -d -n lusi "cd ~/Projects/lusi/ && fish"
 
-tmux new-window -d -n lusi "cd ~/Projects/lusi/ && fish"
+# tmux new-window -d -n levi "cd ~/Projects/levi/ && fish"
 
-tmux new-window -d -n luilibs "cd ~/Projects/luilibs/ && fish"
+# tmux new-window -d -n luilibs "cd ~/Projects/luilibs/ && fish"
 
-tmux new-window -d -n luigui "cd ~/Projects/luigui/ && fish"
+# tmux new-window -d -n luigui "cd ~/Projects/lui/ && fish"
 
-tmux new-window -d -n lapi "cd ~/Projects/lapi/ && fish"
+# tmux new-window -d -n lapi "cd ~/Projects/lapi/ && fish"
 
-tmux new-window -d -n dotfiles "cd ~/Projects/dotfiles/ && fish"
+# tmux new-window -d -n dotfiles "cd ~/Projects/dotfiles/ && fish"
 
-bw copy passwordtotp "Lavego Login"
+zed ~/Projects/luilibs ~/Projects/levi ~/Projects/lusi ~/Projects/lui
+
+bw copy totp "Lavego Login"
