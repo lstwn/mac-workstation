@@ -7,12 +7,12 @@
   become: true
   ansible.builtin.lineinfile:
     path: /etc/shells
-    search_string: /usr/local/bin/fish
-    line: /usr/local/bin/fish
+    search_string: /opt/homebrew/bin/fish
+    line: /opt/homebrew/bin/fish
 - name: set shell to fish
   become: true
   ansible.builtin.user:
     name: "{{ ansible_env.USER }}"
     state: present
-    shell: /usr/local/bin/fish
+    shell: /opt/homebrew/bin/fish
     force: no

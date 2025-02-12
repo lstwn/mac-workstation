@@ -2,7 +2,7 @@
 - name: Configure Mac Workstation
   hosts: localhost
   vars:
-    - hostname: LeosMacBookPro
+    hostname: "LeosMacBookPro"
   vars_files:
     - ./vars/packages.yaml
   vars_prompt:

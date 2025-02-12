@@ -1,4 +1,4 @@
-tap_repos:
+tap_repos: []
 
 homebrew_packages:
   - tmux
@@ -38,7 +38,6 @@ homebrew_packages:
 
 cask_packages:
   - swish
-  - stats
   - signal
   - firefox
   - skim
