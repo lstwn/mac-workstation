@@ -3,14 +3,9 @@
   hosts: localhost
   vars:
     - hostname: LeosMacBookPro
-    - projects_directory: Projects
   vars_files:
     - ./vars/packages.yaml
   vars_prompt:
-    # - name: ssh_key_passphrase
-    #   prompt: ssh key passphrase
-    # - name: github_access_token
-    #   prompt: github access token
   tasks:
     - import_tasks: ./tasks/homebrew.yml
     - import_tasks: ./tasks/app_store.yml

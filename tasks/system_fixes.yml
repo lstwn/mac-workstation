@@ -1,4 +1,5 @@
 ---
+# Still relevant at all?
 - name: execute key repeat fix
   become: false
   ansible.builtin.command: defaults write -app Terminal ApplePressAndHoldEnabled -bool false
