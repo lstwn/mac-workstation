@@ -11,3 +11,4 @@
     - import_tasks: ./tasks/app_store.yml
     - import_tasks: ./tasks/npm.yml
     - import_tasks: ./tasks/hostname_user.yml
+    - import_tasks: ./tasks/system_fixes.yml

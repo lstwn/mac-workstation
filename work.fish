@@ -1,4 +1,4 @@
-#!/usr/local/bin/fish
+#!/opt/homebrew/bin/fish
 
 set SESSION_NAME work
 set CURRENT_SESSION (tmux display-message -p '#S')
@@ -25,18 +25,6 @@ tmux split-window -v -t services "cd ~/Projects/levi/    && fish"
 tmux split-window -h -t services "cd ~/Projects/lui/     && fish"
 tmux split-window -h -t services "cd ~/Projects/lapi/    && fish"
 tmux select-layout -t services tiled
-
-# tmux new-window -d -n lusi "cd ~/Projects/lusi/ && fish"
-
-# tmux new-window -d -n levi "cd ~/Projects/levi/ && fish"
-
-# tmux new-window -d -n luilibs "cd ~/Projects/luilibs/ && fish"
-
-# tmux new-window -d -n luigui "cd ~/Projects/lui/ && fish"
-
-# tmux new-window -d -n lapi "cd ~/Projects/lapi/ && fish"
-
-# tmux new-window -d -n dotfiles "cd ~/Projects/dotfiles/ && fish"
 
 zed ~/Projects/luilibs ~/Projects/levi ~/Projects/lusi ~/Projects/lui
 

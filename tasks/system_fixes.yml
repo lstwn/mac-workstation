@@ -1,8 +1,4 @@
 ---
-# Still relevant at all?
-- name: execute key repeat fix
-  become: false
-  ansible.builtin.command: defaults write -app Terminal ApplePressAndHoldEnabled -bool false
-- name: execute bluetooth fix
+- name: translucent app icons for hidden apps in dock
   become: true
-  ansible.builtin.command: sudo defaults write /Library/Preferences/com.apple.airport.bt.plist bluetoothCoexMgmt Hybrid
+  ansible.builtin.command: defaults write com.apple.Dock showhidden -bool YES && killall Dock
