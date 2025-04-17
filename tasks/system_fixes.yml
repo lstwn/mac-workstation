@@ -2,3 +2,9 @@
 - name: translucent app icons for hidden apps in dock
   become: true
   ansible.builtin.command: defaults write com.apple.Dock showhidden -bool YES && killall Dock
+- name: disable press and hold for special characters for Obsidian
+  become: true
+  ansible.builtin.command: defaults write "md.obsidian" ApplePressAndHoldEnabled -bool false
+- name: disable press and hold for special characters for VSCode
+  become: true
+  ansible.builtin.command: defaults write "com.microsoft.VSCode" ApplePressAndHoldEnabled -bool false
